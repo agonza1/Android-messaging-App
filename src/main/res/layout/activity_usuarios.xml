@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inicio">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Atras"
+        android:id="@+id/atras"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="true" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/conectados"
+        android:fillViewport="true"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:minLines="6"
+        android:maxLines="10"
+        android:scrollbars="vertical"
+        android:gravity="top|left"
+        android:layout_above="@+id/atras" />
+
+
+</RelativeLayout>
